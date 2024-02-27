@@ -42,5 +42,35 @@
 ### Objetivo
 - Abastecer o Data Warehouse com dados limpos
 
-
+# Aula 27/02
+## Metodologia dos projetos de BI&A
+- Planejamento
+    - Concepção do projeto
+    - Definição dos objetivos
+    - Definição da equipe
+    - Identificação de riscos e restrições
+    - Detalhamento de requisitos e definição do escopo
+    - Definição de infraestrutura
+    - Elaboração de plano do projeto
+- Levantamento
+    - Entendimento do negócio
+    - Levantar relatórios existentes
+    - Definição de indicadores
+    - Especificações técnicas
+- Modelagem
+    - Arquitetura do DW
+    - Definir os fatos, métricas e dimensões
+    - Definir a granularidade de informações(?)
+    - Projeto do banco de dados
+- Extração e carga(ETL)
+    - Definir estratégias
+    - Implementar rotinas
+    - Promover integração de dados
+    - Validar dados carregados
+- Aplicações BI&A
+- Transição
+    - Validação do ambiente
+    - Treinamento dos usuários
+    - Suporte
+    - Implantação
   

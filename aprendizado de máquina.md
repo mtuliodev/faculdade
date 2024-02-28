@@ -24,16 +24,50 @@ Tipos de problemas:
     - Diretamente: Através da base de dados
       - Ripper
     - Indiretamente: Pela árvore de decisão
-  - Algoritmo zeroR(régua):
+  - **Algoritmo zeroR(régua)**:
     - Não cria nenhuma regra
     - Atribui todos os registros a uma classe majoritária
     - Serve como baseline para avaliar a qualidade dos modelos, ou seja, se ele acerta 80%, todos os meus algoritmos mais complexos devem acertar de 80% pra cima
-  - Algoritmo OneR
+  - **Algoritmo OneR**:
     - Usado para encontrar o atributo mais relevante, a raíz da arvore
     - Seleciono uma coluna de atributo como antecedente, e outra como conseguinte que é a classe. A partir disso, eu faço um filtro por todos os valores distintos da coluna de atributo e todos os valores diferentes que ele atingiu na classe
     - A coluna que tiver menos erros pela classe, é a raíz(atributo mais relevante)
-  - Algoritmo PRISM
+  - **Algoritmo PRISM**:
     - A partir da classe, eu filtro por cada valor distinto dela e tento identificar algum padrão que existe nas outras colunas dentro desse valor distinto
       - Ex: Se na minha classe de risco, no valor alto, todos os valores são mais de 1000, então se o valor é mais de 1000, o meu risco é alto 
   
     
+# Aula 28-02
+
+## Árvores de decisão
+- Forma indireta de gerar as regras
+- Simples e interpretável
+- Eu posso usar a árvore para **classificação** e **regressão**
+- Atributo raiz/ancestral: é o que melhor classifica/descreve sua base e o que fica no nível 0 da base
+- Atributos de cima: os mais importantes
+- Para descobrir a quantidade de instâncias por classe: na raiz, a classe que tiver mais instâncias(maioria
+- Árvore é um conjunto de noz folha e noz teste
+- Nó folha/regra: é onde termina a ramificação da árvore
+- Nó teste/nodo: o que possui ramificações abaixo dele
+- Altura da folha
+- Samples: número total de instâncias
+- Esquerda da árvore: verdadeiro / Direita da árvore: Falso
+- Árvore muito alta: quer dizer que está muito difícil de descrever os meus dados
+- Se a árvore atinge a mesma precisão que um modelo de aprendizado mais complexo, prefira a árvore
+- Conjunção: /\
+- Disjunção: \/
+- Quanto menos nós testes eu tiver, melhor
+- Índice GIMI - mede a pureza do atributo
+### Entropia
+- É o grau de desordem
+![image](https://github.com/mtuliodev/faculdade/assets/86724878/bdb7f5a3-0110-46cd-9357-fcb525043859)
+
+- A base de log = quantidade de valores distintos da classe
+### Como identificar o atributo raiz?
+- Identificar o atributo de entrada que melhor classifica/distingue o atributo de saída
+- ID3: ganho(atributo) = entropia(classe/atributo de saída) - entropia(atributo de entrada)
+	- O atributo que tiver maior ganho será o raiz
+
+- 
+
+- Nesse modelo da íris, como eu vejo a precisão na árvore?

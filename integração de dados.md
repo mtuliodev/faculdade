@@ -74,3 +74,6 @@
     - Suporte
     - Implantação
   
+# Aula 29/02
+## DW
+- Data warehousing: Desenho, construção, uso e manutenção do data warehouse      

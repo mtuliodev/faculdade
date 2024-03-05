@@ -77,3 +77,15 @@
 # Aula 29/02
 ## DW
 - Data warehousing: Desenho, construção, uso e manutenção do data warehouse      
+
+# Aula 05/03
+## BD Operacional x DW
+
+| -------- | BD Operacional | Data Warehouse |
+| Usuários | Funcionários | Alta administração | 
+| Utilização | Tarefas cotidianas | Estratégia |
+| Princípio de funcionamento | Por transações | Por análise de dados |
+| Detalhamento | Alto | Sumarizado |
+| Padrão de uso | Previsível | Difícil de prever |
+| Organização dos dados | Orientado a aplicações | Orientado a assunto |
+

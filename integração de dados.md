@@ -14,7 +14,8 @@
 - **Migração de dados:** Movimentação de dados para uma plataforma diferente
 
 
-
+- BPM → Business Process Management
+- BPMN → Business Process Model and Notation
 - OLTP → Online Transaction Processing
 - OLAP → Online Analytics Processing
 - PDCA → Plan/Do/Control/Act
@@ -76,7 +77,19 @@
   
 # Aula 29/02
 ## DW
-- Data warehousing: Desenho, construção, uso e manutenção do data warehouse      
+- Data warehousing: Desenho, construção, uso e manutenção do data warehouse
+
+## Etapas de construção de DW
+- Levantamento de requisitos
+- Modelagem multidimensional
+- ETL
+- Visualização de resultados
+
+## Perguntas a serem feitas ao cliente
+- O que estamos avaliando?
+- Como serão avaliados/analisados?
+- Qual o nível mais baixo de detalhe de informações?(ou seja, uma informação específica)
+- Como se espera agrupar/sumarizar as informações?
 
 # Aula 05/03
 ## BD Operacional x DW

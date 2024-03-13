@@ -68,6 +68,30 @@ Tipos de problemas:
 - ID3: ganho(atributo) = entropia(classe/atributo de saída) - entropia(atributo de entrada)
 	- O atributo que tiver maior ganho será o raiz
 
-- 
+# Aula 13-03
+- Atributo dicotômico = atributo binário
+- Label Encoder: binariza os dados categóricos ordinais e os dados numéricos
+- OneHot Encoder: transforma cada dado nominal distinto não ordinal em colunas, em que se a coluna do dado X é a resposta na linha, ela vira 1
 
-- Nesse modelo da íris, como eu vejo a precisão na árvore?
+![image](https://github.com/mtuliodev/faculdade/assets/86724878/74ee59e3-54a4-4b0b-a35d-c83adadda284)
+
+Siglas:
+	- VP: Verdadeiro positivo
+ 	- VN: Verdadeiro negativo
+	- FP: Falso positivo
+ 	- FN: Falso negativo
+  - FN é o pior de todos
+- train_test_split: separa as linhas de entrada entre treino e teste
+- accuracy_score:mede a precisão geral do modelo
+- precision: O quanto ele acertou na classe X diante de todas as linhas que têm em todas as classes
+  - VP/VP + FP
+- recall/revocação/sensibilidade: o quanto o modelo acertou naquela classe X dentro de todas as linhas que têm naquela classe
+  - VP/VP + FN
+- f1 score:
+  - 2xPrecisionxRecall/Precision+Recall
+- support:
+
+
+- Métricas da árvore:
+  - Cobertura por classe: samples/value(qtde de instâncias classificadas/qtd de instâncias da classe na raíz da árvore)
+  - Cobertura global: samples/value(qtde de instâncias classificadas/qtd de instâncias totais na raíz da árvore)

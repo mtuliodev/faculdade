@@ -95,3 +95,33 @@ Siglas:
 - Métricas da árvore:
   - Cobertura por classe: samples/value(qtde de instâncias classificadas/qtd de instâncias da classe na raíz da árvore)
   - Cobertura global: samples/value(qtde de instâncias classificadas/qtd de instâncias totais na raíz da árvore)
+
+# Aula 20-03
+
+- Ao lidar com uma base, sempre ficar atento a correlação entre os atributos de entrada e saída
+  - Se o atributo de entrada for altamente relacionado com o de saída(>0.7), excluir esse atributo da base
+- Dado incosistente: Instâncias em que seus dados são exatamente iguais
+  - Ex: Ambos João e Carlos, tem 3 anos, cursaram inglês e morreram aos 34 anos
+  - Nesse caso eu devo excluir **ambas** instâncias
+  - Se eu tiver dados inconsistentes ímpares, devo considerar os dados que foram a maioria
+- Técnicas para balancear as classes desbalanceadas:
+  - Oversampling: Adicionar instâncias a classe minoritária
+    - Aleatório: Busca instâncias aleatórias da classe minoritária até dar o balanceamento 
+    - Heurística: "Cria" novas instâncias a partir dos dados já existentes
+    - Realizar isso no conjunto de **treino**
+  - Undersampling: Remover instâncias da classe majoritária
+    - Aleatório: Remove instâncias aleatórias da classe majoritária até dar o balanceamento 
+    - Heurístico: "Tentar" deixar os melhores dados da classe majoritária
+- A árvore de decisão NÃO aceita dados nulos
+  - Para substituir os dados nulos, colocar a moda/mediana do atributo(mas pode gerar inconsistências)
+  - KNNinput
+
+
+
+
+# Projeto 1
+- Etapa 1: Selecionar os atributos/instâncias(incluir as pessoas que não foram diagnosticadas com DRC)
+- Etapa 2: Codificar os atributos pra numérico(Label Encoder, One Hot e Ordinal Encoder)
+- Etapa 3: Correlação dos atributos de entrada e saída
+- Etapa 4: Entender a redundância da base
+- Etapa 5: Definir o balanceamento do atributo de saída

@@ -53,3 +53,10 @@
 ## Metodologias de KDD
 - CRISP-DM: bom, mas é padrão. Um excel melhorado
 - SEMMA: mais estatístico
+
+
+# Aula 21-03
+- Nos meus modelos de inferência, devo estar atento as features.
+- Se minha base tem somente fatos, meu modelo vai gerar dados óbvios
+- Se minha base tem somente julgamentos, meu modelo vai gerar dados aleatórios
+- Minha base deve conter fatos e julgamentos, para que haja um modelo representativo e não polarizado

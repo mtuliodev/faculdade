@@ -60,3 +60,15 @@
 - Se minha base tem somente fatos, meu modelo vai gerar dados óbvios
 - Se minha base tem somente julgamentos, meu modelo vai gerar dados aleatórios
 - Minha base deve conter fatos e julgamentos, para que haja um modelo representativo e não polarizado
+
+
+# Aula 02-04 - Dados ausentes
+
+## Valor ausente x valor vazio
+- Valor ausente: É aquele valor que não foi indserido no conjunto, mas que seu valor existe
+- Valor vazio: É aquele valor que não se pode supor nenhum valor a partir dele
+
+## Tratamento dos dados ausentes
+- Fazer uma análise e decidir se vai eliminar ou não o atributo/registro que contém dado ausente
+- Recuperar o dado ausente
+- Técnicas de Data Mining que lidam com valores ausentes, porém em diferentes graus

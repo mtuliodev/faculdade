@@ -90,10 +90,10 @@ Siglas:
 - f1 score:
   - 2xPrecisionxRecall/Precision+Recall
 - support:
-
+- TVP(Verdadeiro positivo) = recall
 
 - Métricas da árvore:
-  - Cobertura por classe: samples/value(qtde de instâncias classificadas/qtd de instâncias da classe na raíz da árvore)
+  - Cobertura por classe: samples/value(qtde de instâncias classificadas/qtd de instâncias da classe na raíz da árvore)	
   - Cobertura global: samples/value(qtde de instâncias classificadas/qtd de instâncias totais na raíz da árvore)
 
 # Aula 20-03
@@ -120,7 +120,7 @@ Siglas:
 
 
 # Projeto 1
-- Etapa 1: Selecionar os atributos/instâncias(incluir as pessoas que não foram diagnosticadas com DRC)
+- Etapa 1: Selecionar os atributos/instâncias(incluir as pessoas que não foram diagnosticadas com DRC para balanceamento)
 - Etapa 2: Codificar os atributos pra numérico(Label Encoder, One Hot e Ordinal Encoder)
 - Etapa 3: Correlação dos atributos de entrada e saída
 - Etapa 4: Entender a redundância da base

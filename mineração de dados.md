@@ -64,11 +64,22 @@
 
 # Aula 02-04 - Dados ausentes
 
+- Entropia: mede o grau de confusão/caos do atributo/informação
+- Entropia mínima: Informação baixa
+- Probabilidade gera informação, informação gera entropia e entropia gera ganho de informação
 ## Valor ausente x valor vazio
 - Valor ausente: É aquele valor que não foi indserido no conjunto, mas que seu valor existe
 - Valor vazio: É aquele valor que não se pode supor nenhum valor a partir dele
+- Se a técnica de Data mining se baseia na probabilidade, ela consegue lidar com valores ausentes
+  	- Porém, essa técnica não funciona com bases com dados massivos em massa
 
 ## Tratamento dos dados ausentes
 - Fazer uma análise e decidir se vai eliminar ou não o atributo/registro que contém dado ausente
 - Recuperar o dado ausente
 - Técnicas de Data Mining que lidam com valores ausentes, porém em diferentes graus
+
+## Mecanismos de dados ausentes
+- MCAR: os valores ausentes estão distribuidos aleatoriamente, em que a probabilidade de encontrar um valor ausente é a mesma para qualquer valor do atributo
+  - Inputar os valores ausentes pela média não é uma boa ideia, pois altera a variância do atributo
+- MAR: valores ausentes, mas que estão ausentes pela relação entre duas variáveis. Ex: Pessoas com ensino superior completo não falam a sua idade
+  - O correto deveria ser inputar a média. Ou seja, somente fazer a média de idade para as pessoas com ensino superior

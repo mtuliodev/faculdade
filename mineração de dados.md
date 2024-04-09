@@ -83,3 +83,19 @@
   - Inputar os valores ausentes pela média não é uma boa ideia, pois altera a variância do atributo
 - MAR: valores ausentes, mas que estão ausentes pela relação entre duas variáveis. Ex: Pessoas com ensino superior completo não falam a sua idade
   - O correto deveria ser inputar a média. Ou seja, somente fazer a média de idade para as pessoas com ensino superior
+ 
+## Técnicas para lidar com dados ausentes
+- Regressão linear: Quando a base é linear, faço a correlação entre as duas bases para inputar os dados ausentes para a coluna
+- Redes neurais: Quando a base é complexa e não linear, faço a correlação entre as duas bases para inputar os dados ausentes para a coluna
+
+# Aula 09-04
+
+- Efeito borboleta: pequenos movimentos que geram grandes catástrofes
+
+## Correlação
+- Se a correlação entre as duas colunas de causa for maior que 0.8, eu elimino uma das duas.
+- Se a correlação entre as colunas de causa e efeito for grande, e elas forem numéricas, eu devo manter elas. Caso sejam categóricas, eu removo.
+- Taxa de erro: valor absoluto da diferença dos valores da reta(pertencente ao gráfico de correlação do X e Y) e os valores dentro da base
+  	- Obs: Só fazer isso  se a minha variável tiver correlação alta
+ 
+Logaritmo niperiano(?)

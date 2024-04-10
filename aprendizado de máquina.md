@@ -116,6 +116,15 @@ Siglas:
   - Para substituir os dados nulos, colocar a moda/mediana do atributo(mas pode gerar inconsistências)
   - KNNinput
 
+# Aula 10-04
+
+## Naive Bayes
+- Serve para prever a probabilidade
+- Etapas
+  	- Fazer a matriz de probabilidade
+  	- Classificar a quantidade de registros distintos em razão de todos na classe, e com base na classe, fazer essa razão para os outros atributos(5/13) 
+
+![image](https://github.com/mtuliodev/faculdade/assets/86724878/4e09c7aa-6bf6-47ba-80eb-edf5b2a394b9)
 
 
 

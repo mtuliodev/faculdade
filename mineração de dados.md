@@ -83,6 +83,7 @@
   - Inputar os valores ausentes pela média não é uma boa ideia, pois altera a variância do atributo
 - MAR: valores ausentes, mas que estão ausentes pela relação entre duas variáveis. Ex: Pessoas com ensino superior completo não falam a sua idade
   - O correto deveria ser inputar a média. Ou seja, somente fazer a média de idade para as pessoas com ensino superior
+- MNAR: quando os dados ausentes não são aleatórios, eles tem um porquê de estarem aleatórios. Ex: Pela variável, pelo responsável eplo registro
  
 ## Técnicas para lidar com dados ausentes
 - Regressão linear: Quando a base é linear, faço a correlação entre as duas bases para inputar os dados ausentes para a coluna
@@ -97,5 +98,18 @@
 - Se a correlação entre as colunas de causa e efeito for grande, e elas forem numéricas, eu devo manter elas. Caso sejam categóricas, eu removo.
 - Taxa de erro: valor absoluto da diferença dos valores da reta(pertencente ao gráfico de correlação do X e Y) e os valores dentro da base
   	- Obs: Só fazer isso  se a minha variável tiver correlação alta
- 
-Logaritmo niperiano(?)
+- Logaritmo niperiano = logaritmo natural
+
+# Aula 16-04
+
+## Tratamento de dados ausentes - categóricos
+- Cold deck: Eu faço a imputação com base no que é mais popular. Ex: Pra saber se a pessoa fuma ou não, eu analiso as informações dela e baseado nelas
+- Composta por classe: Aplico clusterização enter os atributos para descborir os dados ausentes
+## Tratamento de dados ausentes - numéricos
+- Matriz de covariância
+- Máxima respectation: busca adicionar os dados ausentes baseado numa análise multivariada
+
+## Calcular variância do atributo
+- Variância de uma variável: Fórmula da variância
+- Variância entre duas variáveis: Diferença entre a variância das duas variáveis(
+- Objetivo: Preservar a matriz de covariância

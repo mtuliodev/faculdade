@@ -126,7 +126,31 @@ Siglas:
 
 ![image](https://github.com/mtuliodev/faculdade/assets/86724878/4e09c7aa-6bf6-47ba-80eb-edf5b2a394b9)
 
+# Aula 17-04
 
+## Matriz de confusão:
+- Quando eu rodo ela, não quer dizer que acabou o meu trabalho
+- O objetivo principal dela é entender como o modelo classificou a classe em torno das variáveis
+- Se o seu modelo deu 97% de acurácia, não quer dizer que ele esteja certo
+
+## Ensemble Learning / Aprendizagem em Conjunto
+- Ensembles:
+	- Métodos que geram muitos classificadores e combinam os seus resultados
+ - O desempenho de um conjunto com vários classificadores fracos é geralmente melhor do que um único classificador, desde que tenha a mesma quantidade de informação de treinamento
+- Condições necessárias para ele funcionar:
+  	- Ter diversidade: pois os classificadores base devem ser independentes
+  	- O desempenho dos classificadores base deve ser melhor que classificação aleatória
+- O seu resultado é gerado a partir da combinação de predições de todos os classificadores
+
+## Random Forest
+- Não é interpretável
+- Faz uma seleção aleatória com reposição de instâncias pra cada árvore(técnica Bootstrap). Ou seja, se eu tenho 10.000 instâncias, ele vai fazer a seleção aleatória 10.000 vezes
+- Selecionar a quantidade de atributos para cada árvore(o algoritmo vai sempre selecionar essa quantidade, mas vai ser aleatoriamente).
+- Ex: Separo uma parte para treino e teste, e determino a quantidade de árvores que eu quero gerar
+- Quando gerar em python, ficar atento ao número de árvores que serão usadas
+
+## Bagging
+ - Algoritmo no qual eu combino com outro tipo de algoritmo usado como hiperparâmetro
 
 # Projeto 1
 - Etapa 1: Selecionar os atributos/instâncias(incluir as pessoas que não foram diagnosticadas com DRC para balanceamento)
@@ -134,3 +158,4 @@ Siglas:
 - Etapa 3: Correlação dos atributos de entrada e saída
 - Etapa 4: Entender a redundância da base
 - Etapa 5: Definir o balanceamento do atributo de saída
+- **Árvores de decisão, ZeroR, Random Forest, CNN, Bagging + Random Forest**

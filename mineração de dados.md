@@ -113,3 +113,11 @@
 - Variância de uma variável: Fórmula da variância
 - Variância entre duas variáveis: Diferença entre a variância das duas variáveis(
 - Objetivo: Preservar a matriz de covariância
+
+# Aula 23-04
+
+- Quantidade de informação: logaritmo de 1/probabilidade do atributo ocorrer
+- Entropia: Mede a desordem da base de dados
+
+- Identificar entropia por atributo e entropia em relação a classe
+- Se todos os valores de um atributo forem o mesmo, não há desordem

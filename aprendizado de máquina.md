@@ -148,9 +148,46 @@ Siglas:
 - Selecionar a quantidade de atributos para cada árvore(o algoritmo vai sempre selecionar essa quantidade, mas vai ser aleatoriamente).
 - Ex: Separo uma parte para treino e teste, e determino a quantidade de árvores que eu quero gerar
 - Quando gerar em python, ficar atento ao número de árvores que serão usadas
+- Hiperparâmetros mais importantes:
+  - Quantidade de árvores
+  - Quantidade de atributos
 
 ## Bagging
  - Algoritmo no qual eu combino com outro tipo de algoritmo usado como hiperparâmetro
+ - Ele é um estimador homogêneo, que combina o mesmo algoritmo várias vezes
+
+## Stacking
+ - Estimator: Aplico um algoritmo na base como método de classificação
+ - Final_estimator: Após fazer o estimator, eu uso outro algoritmo para classificar os dados em cima do primeiro algoritmo
+
+# Aula 24-04
+
+## Regras de Associação
+- O grau de confiança da regra se mede pelo quantidade que tal evento acontece em detrimento de um evento X.
+  - Ex: 50% das vezes fizeram evento X depois de já terem feito o evento Y
+
+- Métricas de qualidade:
+  - Cobertura
+  - Acurácia(confiança)
+    - Quantidade de registros que levaram o item A e B / Quantidade de registros que levaram o item A
+    - Índice de confiança usado geralmente: 80%
+  - Lift(coeficiente de interesse)
+    - Quantidade de confiança dos itens A e B / Quantidade de suporte d	o item B
+    - Quanto maior o lift, melhor é a regra
+ 
+- Algoritmo apriori
+- 1° passo: Estabelecer os suportes de cada itemset
+  - Diante da base de dados, eu faço o suporte para cada atributo(itemset1)
+    - Ou seja, eu estabeleço quantas vezes tal evento ocorreu
+    - Ex de suporte mínimo: 30%
+    - Ex de confiança mínima: 80%
+    - Se não encontrar nenhuma regra a partir desses indicadores, ir diminuino os parâmetros pouco a pouco
+  - Depois, faço o suporte para cada combinação de atributos(itemset2)
+    - Se no itemset1 permaneceram os eventos X, Y e Z, eu faço as combinações de XY, YZ e XZ
+  - Faço isso sucessivamente estabelendo combinações entre os atributos(itemset3 ou mais)
+    - Baseado no exemplo acima, a última combinação seria XYZ
+- 2° passo: Estabeleço regras para cada itemset
+  - Começar sempre do itemset2
 
 # Projeto 1
 - Etapa 1: Selecionar os atributos/instâncias(incluir as pessoas que não foram diagnosticadas com DRC para balanceamento)

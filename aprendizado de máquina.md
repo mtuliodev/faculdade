@@ -188,6 +188,22 @@ Siglas:
     - Baseado no exemplo acima, a última combinação seria XYZ
 - 2° passo: Estabeleço regras para cada itemset
   - Começar sempre do itemset2
+ 
+# Aula 08-05
+
+- Black box e white box
+  - Black box: O modelo gera um resultado a partir de um dataset, mas o usuário final não sabe como que o modelo chegou nesse resultado.
+  - White box: O modelo gera o resultado, e o modelo mostra ao usuário como que chegou ao resultado, mostrando os detalhes.	
+
+- OneHotEncoder: Dados não ordinais
+- LabelEncoder: Dados ordinais/dados dicotômicos
+
+## Métodos de amostragem
+- Holdout: Do total de registros, separar uma parte para treinamento e outra para teste(train_test_split)
+- Cross-validation:
+  - Treino -> Validação -> Teste
+  - Dos que sobraram do train_test_split, eu faço o cross validation nela
+  - Insiro um valor K, que será em quantas partes eu vou dividir
 
 # Projeto 1
 - Etapa 1: Selecionar os atributos/instâncias(incluir as pessoas que não foram diagnosticadas com DRC para balanceamento)

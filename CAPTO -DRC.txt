@@ -1,0 +1,81 @@
+CAPTO - DRC
+;Deficiência Renal Crônica
+:Demografia
+.Estado
+*Nome
+.Localidade
+*Tipo
+.Tipo de área
+*Classificação
+.abastecimento de água
+*Forma
+.água ingerida
+*Tipo
+.sexo
+*Tipo
+.idade(faixa etária)
+*Valor
+.cor
+*Tipo
+:Acesso e práticas de saúde
+.plano de saúde
+*S/N plano de saúde
+.prática exercícios físicos
+*Grau
+.última vez ao médico
+*valor
+.método contraceptivo mais usado
+*tipo
+:saúde e estilo de vida
+.autoavaliação da saúde
+*Tipo
+.fuma
+*grau
+.IMC
+*Valor
+.consumo do sal
+*Grau
+.dias por semana bebida alcoólica
+*Quantidade
+.pratica esporte
+*Grau
+.esporte mais praticado
+*tipo
+.anda a pé
+*S/N anda a pé
+.horas assistindo tv
+*Quantidade
+.horas internet
+*Quantidade
+.fuma vape
+*grau
+:condições médias e diagnósticos
+.desconforto no peito
+*S/N desconforto no peito
+.última vez que mediu pressão
+*tempo
+.diagnóstico pressão alta
+*S/N pressão alta
+.diagnóstico diabetes
+*S/N diabete
+.diagnóstico doença coronariana
+*S/N doença conoriana
+.diagnóstico asma
+*S/N asma
+.resultado sífilis
+*resultado
+.tratamento sífilis
+*Tipo
+.tratou a IST quando recebeu o diagnóstico
+*S/N tratou IST
+.diagnóstico IST
+*S/N IST
+:Saúde sexual
+.idade que fez a primeira vez
+*Valor
+.fez relação sexual nos últimos 12 meses
+*S/N
+.frequência uso camisinha
+*Frequência
+.camisinha masculina ou feminina
+*M/F
